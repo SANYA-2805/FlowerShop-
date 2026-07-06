@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+         li {
+            padding-left: 20px;
+        }
+
+        a {
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container-fluid"> <!--first row-->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg" style="background-color:pink;" data-bs-theme="light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Flower</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40px;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                            </li>
+                        </ul>
+                        <!-- <div class="d-flex">
+                            <i class="bi bi-heart-fill" style="padding: 10px;"></i>
+                            <i class="bi bi-cart-fill" style="padding: 10px;"></i>
+                            <i class="bi bi-person-fill" style="padding: 10px;"></i>
+                        </div> -->
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div> <!-- end of first row-->
+    
+    <div class="container-fluid" style="margin-top: 100px; "  >
+    <form class="col-md-3 mx-auto border shadow p-3 rounded mt-3" style="align-content: center; background-image: url(login.jpg);" >
+        <h2>Login </h2>
+        <div class="mb-3">
+          <label for="Username" class="form-label" >Username</label>
+          <input type="text" class="form-control" id="Username">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button><br>
+        Not a user? <a href="register.html">Register</a>
+      </form>
+    </div>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
